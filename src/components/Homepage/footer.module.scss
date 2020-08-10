@@ -1,0 +1,40 @@
+$primaryColor: #475a8a;
+$secondaryColor: #90a4be;
+$baseColor: #333333;
+
+.container {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.5256477591036415) 0%,
+    rgba(71, 90, 138, 1) 35%,
+    rgba(0, 0, 0, 0.5368522408963585) 100%
+  );
+  background-color: $primaryColor;
+  margin: 0px;
+  margin-top: 50px;
+  width: 100%;
+  text-justify: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  border: 1px solid black;
+  img {
+    margin-top: 20px;
+    width: 80px;
+    height: 45px;
+  }
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  font-size: 30px;
+  vertical-align: center;
+  margin-top: 28px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-left: 30px;
+}

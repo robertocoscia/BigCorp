@@ -1,0 +1,102 @@
+$primaryColor: #475a8a;
+$secondaryColor: #90a4be;
+$baseColor: #333333;
+$breakpoint-phone: 600px;
+$breakpoint-laptop_with_touch: 1200px;
+$breakpoint-ipad-pro: 1024px;
+$breakpoint-ipad: 768px;
+$breakpoint-surface-duo: 450px;
+
+.component {
+  @media only screen and (max-width: $breakpoint-phone) {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+  }
+  width: 100%;
+  display: flex;
+  text-justify: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  @media only screen and (max-width: $breakpoint-phone) {
+    width: 60%;
+    display: inline;
+    position: relative;
+  }
+  @media only screen and (max-width: $breakpoint-phone) {
+    width: 60%;
+    display: inline;
+    position: relative;
+  }
+  background-color: $primaryColor;
+  margin-top: 50px;
+  padding: 0 40px;
+  position: relative;
+  display: inline-block;
+  flex-direction: row;
+  height: auto;
+  width: 90%;
+  text-align: center;
+}
+
+.imageBlock img {
+  @media only screen and (max-width: $breakpoint-phone) {
+    width: 250px;
+    height: 300px;
+    right: 10px;
+  }
+  @media only screen and (min-width: $breakpoint-ipad) {
+    width: 330px;
+    right: 10px;
+  }
+  @media only screen and (max-width: $breakpoint-surface-duo) {
+    height: 200px;
+    display: inline-block;
+  }
+
+  margin: 50px 20px 50px 0px;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  width: 400px;
+  float: left;
+  position: relative;
+  height: auto;
+  box-shadow: 2px 6px 6px lightgrey;
+}
+
+.textBox {
+  @media only screen and (max-width: $breakpoint-phone) {
+    display: inline;
+  }
+  @media only screen and (min-width: $breakpoint-laptop_with_touch) {
+    margin: 20px 0 50px 50px;
+    max-width: 520px;
+  }
+  @media only screen and (max-width: $breakpoint-ipad-pro) {
+    max-width: 300px;
+    margin: 0px 0px 50px 50px;
+  }
+  @media only screen and (max-width: $breakpoint-ipad) {
+    max-width: 250px;
+    margin: 0px 0px 50px 50px;
+  }
+  margin: 40px 0 50px 50px;
+  width: 100%;
+  text-align: center;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  display: inline-block;
+  height: auto;
+  color: white;
+  padding: 0px 10px 10px 10px;
+  max-width: 700px;
+  position: relative;
+
+  height: auto;
+}

@@ -1,0 +1,218 @@
+$primaryColor: #475a8a;
+$secondaryColor: #90a4be;
+$baseColor: #333333;
+$breakpoint-phone: 600px;
+$breakpoint-surface-duo: 450px;
+
+header {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.5256477591036415) 0%,
+    rgba(71, 90, 138, 1) 35%,
+    rgba(0, 0, 0, 0.5368522408963585) 100%
+  );
+  background-color: $primaryColor;
+  width: 100%;
+  display: flex;
+  text-justify: center;
+  justify-content: center;
+  margin: 0;
+  height: auto;
+}
+header:after {
+  content: '';
+  display: flex;
+  clear: both;
+}
+
+.container {
+  @media only screen and (max-width: $breakpoint-phone) {
+    display: inline-block;
+    position: relative;
+    height: auto;
+  }
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.5256477591036415) 0%,
+    rgba(71, 90, 138, 1) 35%,
+    rgba(0, 0, 0, 0.5368522408963585) 100%
+  );
+  width: 100%;
+  margin: 0;
+  padding-top: 10px;
+  background-color: $primaryColor;
+  display: inline-block;
+  flex-direction: row;
+}
+
+.navbarLeft {
+  margin: 0;
+  padding: 0;
+  float: left;
+  button {
+    @media only screen and (max-width: $breakpoint-phone) {
+      display: inline-block;
+    }
+    padding-left: 50px;
+    display: inline-block;
+    list-style: none;
+    margin-right: 40px;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    background-color: transparent;
+  }
+}
+
+.navbarRight {
+  margin: 0;
+  padding: 0;
+  float: right;
+  button {
+    padding-right: 50px;
+    display: inline-block;
+    margin-right: 40px;
+    background-color: transparent;
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+  }
+}
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  .buttonLink {
+    text-decoration: none;
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+  }
+}
+
+button:hover {
+  text-decoration: none;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  .buttonLink {
+    text-decoration: none;
+    color: $secondaryColor;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+  }
+}
+
+.title {
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+    position: absolute;
+    margin-left: -270px;
+    margin-top: 30px;
+    width: 100%;
+  }
+  @media only screen and (max-width: $breakpoint-surface-duo) {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+    position: absolute;
+    margin-left: -320px;
+    margin-top: 30px;
+    margin-left: -320px;
+
+    width: 100%;
+  }
+  @media only screen and (min-width: $breakpoint-surface-duo) {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 30px;
+    display: block;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 20px;
+
+    width: 100%;
+  }
+
+  text-align: center;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+.navbarLeft .buttonLink {
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+    display: flex;
+    margin: 0;
+    width: 100px;
+    position: relative;
+  }
+  @media only screen and (max-width: $breakpoint-surface-duo) {
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+    display: flex;
+    width: 140px;
+    position: relative;
+  }
+}
+.navbarLeft .buttonLink:hover {
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+    display: flex;
+    margin: 0;
+    width: 100px;
+    position: relative;
+  }
+}
+
+.navbarRight .buttonLink {
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+    display: block;
+    margin-top: -67px;
+    position: relative;
+    float: right;
+  }
+}
+.navbarRight .buttonLink:hover {
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+    display: block;
+    margin-top: -67px;
+    position: relative;
+    float: right;
+  }
+}
+
+.logoImage {
+  justify-content: center;
+  display: flex;
+  img {
+    @media only screen and (max-width: $breakpoint-phone) {
+      display: block;
+      position: relative;
+      margin-left: -470px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    @media only screen and (min-width: $breakpoint-surface-duo) {
+      display: block;
+      position: relative;
+      margin-left: -70px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    margin-top: 20px;
+    width: 80px;
+    height: 45px;
+  }
+}

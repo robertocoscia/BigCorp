@@ -1,0 +1,91 @@
+$primaryColor: #475a8a;
+$secondaryColor: #90a4be;
+$baseColor: #333333;
+$breakpoint-phone: 600px;
+
+.accordion__section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  min-height: 150px;
+}
+.accordion {
+  @media only screen and (max-width: $breakpoint-phone) {
+    display: flex;
+    overflow-x: auto;
+    border: none;
+    outline: none;
+    width: 200px;
+    max-height: 140px;
+  }
+  margin: 5px;
+  position: relative;
+  background-color: $secondaryColor;
+  border-radius: 10px;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  border: none;
+  outline: none;
+}
+
+.accordion:hover,
+.active {
+  background-color: $primaryColor;
+}
+
+.accordion__title {
+  margin-top: 30px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  width: 300px;
+  height: 40px;
+  color: $baseColor;
+}
+.chevron {
+  margin-top: 42px;
+}
+
+.icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.accordion__content {
+  @media only screen and (max-width: $breakpoint-phone) {
+    border: none;
+    outline: none;
+    max-height: 100px;
+  }
+  margin-top: 0px;
+  margin: 0;
+  width: 100%;
+  color: $baseColor;
+  background-color: white;
+  overflow: hidden;
+}
+.accordion__text {
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+  }
+
+  height: auto;
+  margin-top: 0px;
+  color: $baseColor;
+  margin-bottom: 0px;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  padding: 18px;
+}

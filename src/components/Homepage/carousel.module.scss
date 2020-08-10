@@ -1,0 +1,136 @@
+$primaryColor: #475a8a;
+$secondaryColor: #90a4be;
+$baseColor: #333333;
+$breakpoint-phone: 600px;
+$breakpoint-surface-duo: 450px;
+
+.container {
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.containerImages {
+  @media only screen and (max-width: $breakpoint-phone) {
+    text-align: center;
+    display: inline;
+  }
+
+  display: flex;
+  margin-bottom: 30px;
+}
+.imageDiv {
+  @media only screen and (max-width: $breakpoint-phone) {
+    display: inline;
+    justify-self: center;
+  }
+
+  margin-left: 50px;
+  margin-right: 50px;
+  margin: auto;
+  width: 16%;
+  vertical-align: middle;
+  padding: 0px;
+  position: relative;
+
+  .images {
+    width: 100%;
+  }
+}
+.arrow {
+  @media only screen and (max-width: $breakpoint-phone) {
+    display: none;
+  }
+  margin-top: 75px;
+  height: auto;
+  vertical-align: middle;
+  a {
+    height: 50px;
+    font-size: 30px;
+    text-decoration: none;
+    color: $primaryColor;
+  }
+}
+.arrow {
+  @media only screen and (max-width: $breakpoint-phone) {
+    display: none;
+  }
+  height: auto;
+  vertical-align: middle;
+  a:hover {
+    height: 50px;
+    overflow: visible;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: darkgrey;
+    vertical-align: middle;
+    margin: auto;
+  }
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.images {
+  @media only screen and (max-width: $breakpoint-phone) {
+    width: 80%;
+    height: 300px;
+    margin-right: 40px;
+  }
+  @media only screen and (max-width: $breakpoint-surface-duo) {
+    height: 300px;
+    display: inline-block;
+  }
+  border: 1px solid black;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-flex;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}

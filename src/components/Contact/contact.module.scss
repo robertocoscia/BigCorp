@@ -1,0 +1,59 @@
+$primaryColor: #475a8a;
+$secondaryColor: #90a4be;
+$baseColor: #333333;
+$breakpoint-phone: 600px;
+
+.main {
+  @media only screen and (max-width: $breakpoint-phone) {
+    width: 100%;
+    padding: 0;
+    border: none;
+    padding-top: 50px;
+  }
+  margin: 0;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+  position: relative;
+  justify-content: center;
+  .container {
+    @media only screen and (max-width: $breakpoint-phone) {
+      display: block;
+      position: relative;
+      margin-bottom: 50px;
+    }
+    border: 1px solid $primaryColor;
+    background-color: rgba(144, 164, 190, 0.4);
+    position: relative;
+    min-width: 300px;
+    width: 30%;
+  }
+}
+
+.containerForm {
+  margin-top: 0px;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.containerForm form label {
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: 'PT Serif', serif;
+  font-size: 38px;
+  color: $baseColor;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form {
+  text-align: center;
+}

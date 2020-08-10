@@ -1,0 +1,42 @@
+$primaryColor: #475a8a;
+$secondaryColor: #90a4be;
+$baseColor: #333333;
+
+.mainContainer {
+  width: 100%;
+  display: flex;
+  text-justify: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.container {
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  flex-direction: row;
+  height: auto;
+  width: 90%;
+  text-align: center;
+}
+
+.newsTitle {
+  font-family: 'PT Serif', serif;
+  font-size: 27px;
+  display: inline-block;
+  margin-top: 0;
+  text-align: center;
+  color: $baseColor;
+}
+
+.postsList {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  border: 1px solid $primaryColor;
+  background-color: $secondaryColor;
+  color: $baseColor;
+  text-align: center;
+}
